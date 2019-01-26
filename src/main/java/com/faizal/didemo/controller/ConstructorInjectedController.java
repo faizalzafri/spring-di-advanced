@@ -7,7 +7,7 @@ import com.faizal.didemo.service.GreetingService;
 
 @Controller
 public class ConstructorInjectedController {
-	@Autowired
+	
 	private GreetingService greetingService;
 
 	public ConstructorInjectedController(GreetingService greetingService) {
