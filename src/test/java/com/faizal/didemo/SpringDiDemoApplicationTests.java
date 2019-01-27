@@ -25,7 +25,7 @@ public class SpringDiDemoApplicationTests {
 
 	@Before
 	public void setUp() {
-		apct = new AnnotationConfigApplicationContext("com.faizal.didemo");
+		apct = new AnnotationConfigApplicationContext("com.faizal.didemo.*");
 
 	}
 
