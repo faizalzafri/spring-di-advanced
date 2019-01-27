@@ -6,13 +6,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Primary
-@Profile({"en","default"})
-public class PrimaryGreetingService implements GreetingService {
+@Profile("fr")
+public class PrimaryFrenchGreetingService implements GreetingService {
 
 	@Override
 	public String sayGreeting() {
 		// TODO Auto-generated method stub
-		return "Primary Service";
+		return "Service primaire";
 	}
 
 }

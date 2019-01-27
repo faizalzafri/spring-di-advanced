@@ -23,7 +23,6 @@ public class PropertyInjectionNoQualifierTest {
 	public void testPropertyInjectedControllerAutoDI() {
 		PropertyInjectedController controller2 = (PropertyInjectedController) apct
 				.getBean(PropertyInjectedController.class);
-		System.out.println(controller2.sayHello());
 		assertNotEquals(GreetingServiceImpl.HELLO, controller2.sayHello());
 
 	}
