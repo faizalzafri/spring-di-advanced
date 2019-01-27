@@ -14,7 +14,21 @@ public class SpringDiDemoApplication {
 
 	public static void main(String[] args) {
 
-		SpringApplication.run(SpringDiDemoApplication.class, args);
+		ApplicationContext apct = SpringApplication.run(SpringDiDemoApplication.class, args);
+
+		MyController controller = (MyController) apct.getBean("myController");
+		System.out.println(controller.hello());
+
+		PropertyInjectedController controller2 = (PropertyInjectedController) apct
+				.getBean(PropertyInjectedController.class);
+		System.out.println(controller2.sayHello());
+
+		SetterInjectedController controller3 = (SetterInjectedController) apct.getBean(SetterInjectedController.class);
+		System.out.println(controller3.sayHello());
+
+		ConstructorInjectedController controller4 = (ConstructorInjectedController) apct
+				.getBean(ConstructorInjectedController.class);
+		System.out.println(controller4.sayHello());
 
 	}
 
