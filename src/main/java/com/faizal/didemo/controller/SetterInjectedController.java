@@ -8,16 +8,14 @@ import com.faizal.didemo.service.GreetingService;
 
 @Controller
 public class SetterInjectedController {
-
-	@Autowired
-	@Qualifier("setterGreetingService")
 	private GreetingService greetingService;
 
 	public String sayHello() {
 		return greetingService.sayGreeting();
 	}
 
-	public void setGreetingService(GreetingService greetingService) {
+	@Autowired
+	public void setGreetingService(@Qualifier("setterGreetingService") GreetingService greetingService) {
 		this.greetingService = greetingService;
 	}
 }

@@ -9,11 +9,12 @@ import com.faizal.didemo.service.GreetingService;
 @Controller
 public class PropertyInjectedController {
 
-	@Autowired
-	//@Qualifier("greetingServiceImpl")
-	public GreetingService greetingServiceImpl;
+    @Autowired
+    @Qualifier("greetingServiceImpl")
+    public GreetingService greetingServiceImpl;
 
-	public String sayHello() {
-		return greetingServiceImpl.sayGreeting();
-	}
+    public String sayHello(){
+        return greetingServiceImpl.sayGreeting();
+    }
+
 }

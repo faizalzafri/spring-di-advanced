@@ -18,6 +18,6 @@ public class ConstructorInjectedControllerTest {
 
 	@Test
 	public void testGreeting() {
-		assertEquals(GreetingServiceImpl.HELLO, constructorInjectedController.sayHello());
+		assertEquals("Hello - I was injected via the constructor!!!", constructorInjectedController.sayHello());
 	}
 }

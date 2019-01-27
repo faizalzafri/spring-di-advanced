@@ -7,8 +7,6 @@ public class SetterGreetingService implements GreetingService {
 
 	@Override
 	public String sayGreeting() {
-		// TODO Auto-generated method stub
-		return "Injected by the setter";
+		return "Hello - I was injected by the getter";
 	}
-
 }
