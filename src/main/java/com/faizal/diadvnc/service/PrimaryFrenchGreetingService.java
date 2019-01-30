@@ -1,4 +1,4 @@
-package com.faizal.didemo.service;
+package com.faizal.diadvnc.service;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;

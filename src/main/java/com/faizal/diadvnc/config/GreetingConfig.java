@@ -1,13 +1,13 @@
-package com.faizal.didemo.config;
+package com.faizal.diadvnc.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
 
-import com.faizal.didemo.service.GreetingRepository;
-import com.faizal.didemo.service.GreetingService;
-import com.faizal.didemo.service.GreetingServiceFactory;
+import com.faizal.diadvnc.service.GreetingRepository;
+import com.faizal.diadvnc.service.GreetingService;
+import com.faizal.diadvnc.service.GreetingServiceFactory;
 
 @Configuration
 public class GreetingConfig {

@@ -1,11 +1,13 @@
-package com.faizal.didemo.controller;
+package com.faizal.diadvnc.controller;
 
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
 import org.junit.Test;
 
-import com.faizal.didemo.service.GreetingServiceImpl;
+import com.faizal.diadvnc.service.GreetingServiceImpl;
+
+import anothercontroller.SetterInjectedController;
 
 public class SetterInjectedControllerTest {
 

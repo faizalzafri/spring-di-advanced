@@ -1,4 +1,4 @@
-package com.faizal.didemo.service;
+package com.faizal.diadvnc.service;
 
 import org.springframework.stereotype.Service;
 

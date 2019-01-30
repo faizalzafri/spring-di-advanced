@@ -1,4 +1,4 @@
-package com.faizal.didemo.service;
+package com.faizal.diadvnc.service;
 
 public class PrimarySpanishGreetingService implements GreetingService {
 
