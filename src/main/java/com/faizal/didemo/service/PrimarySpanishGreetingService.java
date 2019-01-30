@@ -1,17 +1,15 @@
 package com.faizal.didemo.service;
 
-import org.springframework.context.annotation.Primary;
-import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Service;
-
-@Service
-@Profile("es")
-@Primary
 public class PrimarySpanishGreetingService implements GreetingService {
 
     private GreetingRepository greetingRepository;
 
-    @Override
+    public PrimarySpanishGreetingService(GreetingRepository greetingRepository2) {
+		// TODO Auto-generated constructor stub
+		this.greetingRepository = greetingRepository2;
+	}
+
+	@Override
     public String sayGreeting() {
         return greetingRepository.getSpanishGreeting();
     }
