@@ -13,14 +13,13 @@ import com.faizal.diadvnc.examplebeans.TempDataSource;
 import com.faizal.diadvnc.examplebeans.TempJmsSource;
 
 @Configuration
-// @PropertySource({ "classpath:datasource.properties",
-// "classpath:jmssource.properties" })
+/*@PropertySource({ "classpath:datasource.properties", "classpath:jmssource.properties" })
 @PropertySources({ @PropertySource("classpath:jmssource.properties"),
 		@PropertySource("classpath:datasource.properties") })
-public class PropertyConfig {
+*/public class PropertyConfig {
 
-	@Autowired
-	Environment env;
+	/*@Autowired
+	Environment env;*/
 
 	@Value("${mydb.username}")
 	private String username;
@@ -42,7 +41,7 @@ public class PropertyConfig {
 
 	@Bean
 	public TempDataSource tempDataSource() {
-		return new TempDataSource(env.getProperty("USERNAME"), password, url);
+		return new TempDataSource(username, password, url);
 	}
 
 	@Bean
