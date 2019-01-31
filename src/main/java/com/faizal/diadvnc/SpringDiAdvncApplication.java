@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.faizal.diadvnc.controller.MyController;
 import com.faizal.diadvnc.examplebeans.TempDataSource;
+import com.faizal.diadvnc.examplebeans.TempJmsSource;
 
 @SpringBootApplication
 @ComponentScan(basePackages = { "anothercontroller", "com.faizal.diadvnc" })
@@ -19,7 +20,11 @@ public class SpringDiAdvncApplication {
 
 		TempDataSource tempDataSource = ctx.getBean(TempDataSource.class);
 
+		TempJmsSource tempJmsSource = ctx.getBean(TempJmsSource.class);
+
 		System.out.println(tempDataSource.getUsername());
+		
+		System.out.println(tempJmsSource.getUsername());
 
 	}
 }
