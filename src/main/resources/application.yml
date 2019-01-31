@@ -2,3 +2,12 @@ myjms:
   username: faizjms
   password: 1234jms
   url: http://yz.zx.xzjms
+
+---  
+spring:
+   profiles: de
+ 
+myjms:
+  username: faizjmsGerman
+  password: 1234jms
+  url: http://yz.zx.xzjms
